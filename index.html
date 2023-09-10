@@ -23,6 +23,8 @@
 <body>
   <main>
     <div class="container">
+      <div class="purpleDecor"></div>
+      <div class="grayDecor"></div>
       <div class="phoneContainer">
         <!-- phone top -->
         <div class="phoneTop">
@@ -39,33 +41,40 @@
         <div class="whiteBar"></div>
 
         <div class="phoneBody">
+          
           <div class="chatMessageReceive">
             <div class="chatMessage chatMessageLeft">That sounds great. I'd be happy with that.</div>
             <div class="chatMessage chatMessageLeft">Could you send over some pictures of your dog, please?</div>
           </div>
-          <div class="chatMessage chatImagesRight">
-            <img src="images/dog-image-1.jpg" alt="dog-image-1">
-            <img src="images/dog-image-2.jpg" alt="dog-image-2">
-            <img src="images/dog-image-3.jpg" alt="dog-image-3">
-          </div>
-          <div class="chatMessage chatMessageRight">
-            <p>Here are a few pictures. She's a happy girl!</p>
-          </div>
-          <div class="chatMessage chatMessageRight">Can you make it?</div>
-          <div class="chatMessage chatMessageLeft">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
-          <div class="chatMessage chatMessageLeft chatMessagePrice">
-            <div class="chatMessagePrice-left">
-              <i class="fa-regular fa-circle"></i>
-              <p>30 minute walk</p>
+
+          <div class="chatMessageSelf">
+            <div class="chatImagesRight">
+              <img src="images/dog-image-1.jpg" alt="dog-image-1">
+              <img src="images/dog-image-2.jpg" alt="dog-image-2">
+              <img src="images/dog-image-3.jpg" alt="dog-image-3">
             </div>
-            <h3>$29</h3>
-          </div>
-          <div class="chatMessage chatMessageLeft chatMessagePrice">
-            <div class="chatMessagePrice-left">
-              <i class="fa-regular fa-circle"></i>
-              <p>  1 hour walk</p>
+            <div class="chatMessage chatMessageRight">
+              <p>Here are a few pictures. She's a happy girl!</p>
             </div>
-            <h3>$49</h3>
+            <div class="chatMessage chatMessageRight">Can you make it?</div>
+          </div>
+
+          <div class="chatMessageReceive">
+            <div class="chatMessage chatMessageLeft">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+            <div class="chatMessage chatMessageLeft chatMessagePrice">
+              <div class="chatMessagePrice-left">
+                <i class="fa-regular fa-circle"></i>
+                <p>30 minute walk</p>
+              </div>
+              <h3>$29</h3>
+            </div>
+            <div class="chatMessage chatMessageLeft chatMessagePrice">
+              <div class="chatMessagePrice-left">
+                <i class="fa-regular fa-circle"></i>
+                <p>  1 hour walk</p>
+              </div>
+              <h3>$49</h3>
+            </div>
           </div>
         </div>
 
@@ -74,15 +83,18 @@
           <button><i class="fa-solid fa-chevron-right"></i></button>
         </div>
       </div>
-
+      
+      <!-- bottom text -->
+      <div class="bottomText">
+        <h1>Simple booking</h1>
+        <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+          discuss arrangements and make bookings. Once the walk has been completed you can rate 
+          your walker and book again all through the chat.</p>
+      </div>
 
     </div>
   </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 <style src="js.js"></style>
 </html>

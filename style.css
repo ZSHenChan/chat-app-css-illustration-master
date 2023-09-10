@@ -5,23 +5,32 @@
 }
 
 main{
-    background-color: beige;
+    background-color: hsl(0, 0%, 100%);
     min-height: 120vh;
+    max-height: 350vh;
     display: flex;
     justify-content: center;
 }
-
+.container{
+    display: flex;
+    flex-direction: column;
+    min-width: 18rem;
+    max-width: 27rem;
+    min-height: 40rem;
+    align-items: center;
+}
 .phoneContainer{
     background-color: hsl(270, 20%, 96%);
-    min-height: 40rem;
-    min-width: 16rem;
-    max-width: 25rem;
-    margin: 4rem 2rem 0 2rem;
+    max-width: 100%;
+    
     border: solid 0.8rem white;
     border-radius: 2.4rem;
     box-shadow: 0.3rem 0.6rem 0.5rem hsl(206, 6%, 86%);
     display: flex;
     flex-direction: column;
+    z-index: 1;
+
+    margin: 5rem 2rem 5rem 2rem;
 }
 .phoneContainer .phoneTop{
     display: flex;
@@ -93,10 +102,22 @@ main{
     flex-direction: column;
     padding: 0.3rem;
     font-size: 0.8rem;
+    width: 100%;
+}
+.chatMessageReceive{
+    margin-bottom: 0.8rem;
+}
+.chatMessageSelf{
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 .phoneBody .chatMessage{
-    max-width: 60%;
-    margin: 0.3rem;
+    max-width: 50%;
+    margin: 0rem 0.3rem 1rem 0.3rem;
     padding: 0.7rem;
 }
 .phoneBody .chatMessageLeft{
@@ -107,7 +128,6 @@ main{
 .phoneBody .chatMessageRight{
     color: hsl(271, 15%, 43%);
     background-color: white;
-    align-self: flex-end;
     border-radius: 1rem 1rem 0.3rem 1rem;
     box-shadow: 0.3rem 0.2rem 0.2rem hsl(206, 6%, 79%);
 }
@@ -124,14 +144,13 @@ main{
 }
 .chatImagesRight{
     display: flex;
-    align-self: flex-end;
     flex-direction: row;
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: 0rem 0.3rem 1rem 0.3rem;
 }
 .chatImagesRight img{
-    width: 3rem;
+    width: 4rem;
     border-radius: 0.5rem;
     margin-left: 0.6rem;
 }
@@ -144,7 +163,7 @@ main{
 .chatMessagePrice i{
     margin-right: 0.5rem;
     font-size: 1.2rem;
-    color: hsl(276, 100%, 81%);
+    color: hsl(289, 100%, 72%);
 }
 .chatMessagePrice p{
     font-size: 0.8rem;
@@ -153,6 +172,7 @@ main{
 }
 .chatMessagePrice h3{
     margin-right: 0.8rem;
+    font-size: 1.3rem;
     color: hsl(276, 100%, 97%);
     font-weight: 700;
 }
@@ -193,3 +213,49 @@ main{
     font-weight: 700;
 }
 
+.bottomText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+
+    max-width: 25rem;
+    margin: 0;
+    padding: 0;
+}
+.bottomText h1{
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+    color: hsl(271, 36%, 24%);
+}
+.bottomText p{
+    line-height: 180%;
+    font-size: 1.3rem;
+    color: hsl(270, 7%, 64%);
+}
+.purpleDecor{
+    min-height: 200vh;
+    min-width: 100vw;
+    background: rgb(136,56,255);
+background: linear-gradient(0deg, rgba(136,56,255,1) 20%, rgba(233,66,255,1) 100%);
+    position: absolute;
+    z-index: 0;
+    display: inline-block;
+    border-radius: 100rem;
+
+    transform: translate(-53%,-50%);
+}
+.grayDecor{
+    min-height: 200vh;
+    min-width: 100vw;
+    background-color: hsl(270, 20%, 96%);
+    position: absolute;
+    z-index: 0;
+    display: inline-block;
+    border-radius: 100rem;
+
+    transform: translate(53%,40%);
+    overflow:hidden;
+}
